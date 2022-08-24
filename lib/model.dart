@@ -2,7 +2,6 @@
 import 'dart:convert';
 
 List<Album> albumFromJson(String str) => List<Album>.from(json.decode(str).map((x) => Album.fromJson(x)));
-
 String albumToJson(List<Album> data) => json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
 
 class Album {
